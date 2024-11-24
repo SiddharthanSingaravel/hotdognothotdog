@@ -15,7 +15,7 @@ st.sidebar.write("This model is ResNet18 trained to classify images as hotdog or
 # Load the model from Hugging Face
 @st.cache_resource
 def load_model():
-    model_path = hf_hub_download(repo_id="asidfactory/hotdognothotdog", filename="resnet_state_dict.pth")
+    model_path = hf_hub_download(repo_id="asidfactory/hotdognothotdog", filename="resnet.pkl")
     config_path = hf_hub_download(repo_id="asidfactory/hotdognothotdog", filename="config.json")
     
     # Load the model configuration
